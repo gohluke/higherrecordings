@@ -46,6 +46,20 @@ export default function Home() {
           RECORDINGS
         </h1>
       </div>
+      <footer className="absolute bottom-0 w-full p-4 text-center">
+        <p className={`${montserrat.className} text-white text-[1.8vw] sm:text-[1vw] opacity-60`}>
+          © 2025 Higher Recordings. All Rights Reserved. Powered by{' '}
+          <a 
+            href="https://phi.llc" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="hover:opacity-100 transition-opacity"
+          >
+            Phi
+          </a>
+          .
+        </p>
+      </footer>
     </div>
   );
 }
