@@ -1,9 +1,33 @@
 import { Montserrat } from 'next/font/google';
+import { Metadata } from 'next';
 
 const montserrat = Montserrat({
   subsets: ['latin'],
   weight: '500',
 });
+
+export const metadata: Metadata = {
+  title: 'Higher. Recordings',
+  description: 'Higher. Recordings - A New York City based record label.',
+  keywords: ['record label', 'music', 'NYC', 'electronic music', 'Higher Recordings'],
+  openGraph: {
+    title: 'Higher. Recordings',
+    description: 'Higher. Recordings - A New York City based record label.',
+    type: 'website',
+    locale: 'en_US',
+    siteName: 'Higher. Recordings',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Higher. Recordings',
+    description: 'Higher. Recordings - A New York City based record label.',
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
+  metadataBase: new URL('https://higherrecordings.com'),
+};
 
 export default function Home() {
   return (
