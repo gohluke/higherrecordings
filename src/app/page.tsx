@@ -10,6 +10,11 @@ export const metadata: Metadata = {
   title: 'Higher. Recordings',
   description: 'Higher. Recordings - A New York City based record label.',
   keywords: ['record label', 'music', 'NYC', 'electronic music', 'Higher Recordings'],
+  icons: {
+    icon: '/higher-logo.svg',
+    shortcut: '/higher-logo.svg',
+    apple: '/higher-logo.svg',
+  },
   openGraph: {
     title: 'Higher. Recordings',
     description: 'Higher. Recordings - A New York City based record label.',
